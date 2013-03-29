@@ -1,0 +1,60 @@
+.menu-frame{
+	overflow: hidden;
+}
+
+.menu-item-parent{
+	float: left;
+	border: 1px solid #DBE9F4;
+	padding: 5px 8px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+.menu-item-link{
+	text-decoration: none;
+	color: #5098FA;
+}
+
+.menu-item-parent[data-selected]{
+	background-color: white;
+}
+
+.menu-item-parent:hover{
+	cursor: pointer;
+	background-color: white;
+}
+
+.menu-item-parent:hover > .menu-item-childrenFrame{
+	display: block;
+}
+
+.menu-item-parent-text{
+	display: block;
+	font-size: 19px;
+}
+
+.menu-item-selected-child-text{
+	color: #024095;
+}
+
+.menu-item-childrenFrame{
+	position: absolute;
+	display: none;
+	margin-top: 5px;
+	background-color: white;
+	padding: 0 10px;
+	border: solid 1px #DBE9F4;
+}
+
+.menu-item-child-text:hover{
+	color: #024095;
+}
+
+.menu-item-child-text{
+	display: block;
+	padding: 5px 5px 5px 0;
+}
+
+.menu-item-childrenFrame > .menu-item-child-text:not(:nth-last-child(1)){
+	border-bottom: solid 1px #DBE9F4;
+}

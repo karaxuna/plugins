@@ -1,0 +1,22 @@
+<html style="height: 100%;">
+	<head>
+		<script type="text/javascript" src="./Dialog/dialog.js"></script>
+		<link rel="stylesheet" type="text/css" href="./Dialog/dialog.css">
+		<script type="text/javascript" src="./CL.js"></script>
+		<script type="text/javascript" src="./mouse.js"></script>
+		<script type="text/javascript" src="./Resizable/resizable.js"></script>
+		<script type="text/javascript" src="./Movable/movable.js"></script>
+
+		<script type="text/javascript">
+			CL.addEvent(window, 'load', function(){
+				window.dialog = new Dialog({
+					html: '<div style="background: url(\'http://t2.gstatic.com/images?q=tbn:ANd9GcQJ2JJHJUZFIsleDMexiZRpdmqBhwLuxCy-EEA5yPmp1yH6wX10dA\') no-repeat; background-size: 400px 300px; height: 300px; width: 400px;"/>',
+					modal: true
+				});
+			});
+		</script>
+	</head>
+	<body style="margin: 0; height: 100%;">
+		
+	</body>
+</html>
